@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="./assets/images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="desktop-style.css" rel="stylesheet" />
+
+    <link href="mobile-style.css" rel="stylesheet" />
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!--  &lt;!&ndash; Feel free to remove these styles or customise in your own stylesheet 👍 &ndash;&gt;-->
+    <!--  <style>-->
+    <!--    .attribution { font-size: 11px; text-align: center; }-->
+    <!--    .attribution a { color: hsl(228, 45%, 44%); }-->
+    <!--  </style>-->
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <h1>Your Result</h1>
+        <div class="circle">
+          <p>76</p>
+          <p>of 100</p>
+        </div>
+        <div class="appraisal">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the</p>
+          <p>people who have taken these tests.</p>
+        </div>
+      </header>
+
+      <section>
+        <table>
+          <tr>
+            <th>Summary</th>
+          </tr>
+          <tr class="reaction">
+            <td>
+              <img alt="" src="assets/images/icon-reaction.svg" />Reaction
+            </td>
+            <td>
+              80
+              <pre> / 90</pre>
+            </td>
+          </tr>
+          <tr class="memory">
+            <td><img alt="" src="assets/images/icon-memory.svg" />Memory</td>
+            <td>
+              92
+              <pre> / 100</pre>
+            </td>
+          </tr>
+
+          <tr class="verbal">
+            <td><img alt="" src="assets/images/icon-verbal.svg" />Verbal</td>
+            <td>
+              61
+              <pre> / 100</pre>
+            </td>
+          </tr>
+
+          <tr class="visuals">
+            <td><img alt="" src="assets/images/icon-visual.svg" />Visuals</td>
+            <td>
+              72
+              <pre> / 100</pre>
+            </td>
+          </tr>
+        </table>
+        <button>Continue</button>
+      </section>
+    </div>
+  </body>
+</html>

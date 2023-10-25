@@ -1,0 +1,122 @@
+:root {
+  /*Primary Colors*/
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /*    Neutral colors*/
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/*Reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Base selectors*/
+body {
+  background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+article {
+  background-color: var(--white);
+  padding-bottom: 2rem;
+  border-radius: 5px;
+}
+
+aside {
+  margin-inline: 1.5rem;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: var(--Very-dark-blue);
+  font-family: "Fraunces", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+  opacity: 0.6;
+}
+
+button {
+  border: none;
+  background-color: var(--dark-cyan);
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 1rem;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--Very-dark-blue);
+  color: var(--white);
+}
+
+/*Class selectors*/
+.page-container {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 375px;
+  margin-inline: auto;
+  padding-bottom: 2rem;
+}
+
+.mobile-img {
+  display: block;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.perfume {
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: flex;
+  font-family: "Fraunces", serif;
+  /*align-items: center;*/
+  gap: 15px;
+}
+
+.price p:first-child {
+  font-size: 33px;
+  color: var(--dark-cyan);
+  opacity: 1;
+}
+
+.price p:last-child {
+  opacity: 0.5;
+  align-self: center;
+}

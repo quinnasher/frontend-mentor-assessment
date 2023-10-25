@@ -1,0 +1,21 @@
+@media (min-width: 1440px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1440px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .page-container {
+    min-width: 500px;
+  }
+
+  .price-plan p {
+    font-size: 1rem;
+  }
+}

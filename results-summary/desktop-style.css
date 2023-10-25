@@ -1,0 +1,43 @@
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    background-color: red;
+  }
+
+  .page-container {
+    display: flex;
+    min-width: 800px;
+    margin-inline: auto;
+    /*justify-content: space-around;*/
+    /*align-items: stretch;*/
+    gap: 2rem;
+    margin-block: 8rem;
+  }
+
+  div:first-child {
+    padding-bottom: 0;
+    border-radius: 2rem;
+  }
+
+  header:first-child {
+    border-radius: 2rem;
+    /*min-width: 350px;*/
+    min-height: 500px;
+  }
+
+  section {
+    padding-top: 2rem;
+  }
+
+  table {
+    min-width: 350px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+  }
+
+  button:first-child {
+    background-color: red;
+    width: 700px;
+  }
+}

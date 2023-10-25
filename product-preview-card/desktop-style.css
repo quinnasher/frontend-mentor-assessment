@@ -1,0 +1,30 @@
+@media (min-width: 1440px) {
+  article {
+    display: flex;
+    margin-block: 10rem;
+    width: 600px;
+    padding-bottom: 0;
+  }
+
+  aside {
+    padding-block: 1rem;
+  }
+
+  .page-container {
+    display: flex;
+    width: 1440px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    border-radius: 5px 0 0 5px;
+    display: block;
+    width: 50%;
+  }
+}

@@ -1,0 +1,138 @@
+/*Variables*/
+:root {
+  /*    Primary colors*/
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /*    secondary colors*/
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/*Resets*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Base selectors*/
+body {
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body::before {
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  content: "";
+  height: 25vh;
+  width: 100%;
+  display: inline-block;
+  /*z-index: -1;*/
+}
+
+header img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+p {
+  color: var(--desaturated-blue);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+section {
+  padding-inline: 2rem;
+}
+
+section p {
+  text-align: center;
+}
+
+section p:nth-child(4) {
+  margin-bottom: 1.8rem;
+}
+
+button a {
+  color: var(--pale-blue);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--bright-blue);
+  color: var(--desaturated-blue);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  width: 100%;
+  padding: 1rem;
+}
+
+button:last-child {
+  background-color: transparent;
+  /*color: var(--pale-blue);*/
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+#button-shadow {
+  box-shadow: 0 10px 5px var(--pale-blue);
+}
+
+.page-container {
+  /*background-image: url("images/pattern-background-mobile.svg");*/
+  background-color: white;
+  box-shadow: 0 0 10px var(--desaturated-blue);
+  border-radius: 20px;
+  width: 375px;
+  margin-inline: auto;
+  margin-block: 3rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.price-plan {
+  background-color: var(--very-pale-blue);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price-plan p:first-child {
+  color: var(--dark-blue);
+}
+
+.price-plan a {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+
+.price-plan a:hover,
+.price-plan a:active {
+  cursor: pointer;
+  text-decoration: none;
+}
